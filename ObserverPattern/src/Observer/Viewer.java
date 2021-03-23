@@ -10,10 +10,10 @@ public class Viewer implements Observer {
 		this.instructor.subscribe(this);
 	}
 	
+	// Updates observer state
 	@Override
 	public void update() {
 		System.out.println(this.getName() + " doing exercise: " + this.instructor.getExercise());
-
 	}
 	
 	public String getName() {
